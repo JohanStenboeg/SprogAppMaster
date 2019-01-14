@@ -230,7 +230,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/test', indexRouter);
+//app.use('/test', indexRouter);
 app.use('/ordbog', ordbogRouter);
 app.use('/redigerord', redigerordRouter);
 app.use('/test', testRouter);
