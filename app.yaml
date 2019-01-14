@@ -13,12 +13,5 @@ resources:
   memory_gb: 0.5
   disk_size_gb: 10
 
-{
-  "engines": {
-    "node": "9.x"
-  }
-}
-"scripts": {
-  "start": "node server.js"
-}
+
   
