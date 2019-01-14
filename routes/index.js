@@ -5,7 +5,7 @@ var upload = multer({dest: "./public/uploads"});
 var MongoClient = require('mongodb').MongoClient;
 var ObjectId = require('mongodb').ObjectID;
 var mongodb = require('mongodb');
-var url = "mongodb://stenboeg:stenboeg1234@ds155653.mlab.com:55653/sprogappmongodb";
+var url = "mongodb://stenboeg:stenboeg1234@ds155653.mlab.com:55653/sprogappfinalmongodb";
 
 /* Handler GET request og henter alle objects i ordbogen */
 router.get('/api/getord', function (req, res, next) {
@@ -114,7 +114,7 @@ router.post('/api/updatevideo', function (req, res, next) {
 /* GET index. */
 /*router.get('/', function (req, res, next) {
   res.render('index', {
-    title: 'SprogApp'
+    title: 'sprogappfinal'
   });
 });
 */

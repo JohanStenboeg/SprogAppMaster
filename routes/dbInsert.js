@@ -2,7 +2,7 @@ const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 
 // Connection URL
-var url = "mongodb://stenboeg:stenboeg1234@ds155653.mlab.com:55653/sprogappmongodb";
+var url = "mongodb://stenboeg:stenboeg1234@ds155653.mlab.com:55653/sprogappfinalmongodb";
 
 
 MongoClient.connect(url,{ useNewUrlParser: true }, function(err, db) {

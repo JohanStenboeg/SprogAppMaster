@@ -1,5 +1,5 @@
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://stenboeg:stenboeg1234@ds155653.mlab.com:55653/sprogappmongodb";
+var url = "mongodb://stenboeg:stenboeg1234@ds155653.mlab.com:55653/sprogappfinalmongodb";
 exports.searchDB = function(brugernavn,password){
 MongoClient.connect(url,{ useNewUrlParser: true }, function(err, db) {
   if (err) throw err;

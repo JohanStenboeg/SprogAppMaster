@@ -17,7 +17,7 @@ var app = express();
 
 //login
 var clienttoserver = require('./routes/clienttoserver.js')
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8081;
 //var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
@@ -181,12 +181,12 @@ socket.on('disconnect',function(username){
     //Opretter et MongoClient variabel og henter mongodb modulet
 var MongoClient = require('mongodb').MongoClient;
 
-//SprogAppChatDB = sacdb
+//sprogappfinalChatDB = sacdb
 //Opretter variabel med url'en. 
-var url = "mongodb://stenboeg:stenboeg1234@ds155653.mlab.com:55653/sprogappmongodb";
+var url = "mongodb://stenboeg:stenboeg1234@ds155653.mlab.com:55653/sprogappfinalmongodb";
 
-//Database navn: sprogAppChatDb
-var dbNavn = "sprogappmongodb";
+//Database navn: sprogappfinalChatDb
+var dbNavn = "sprogappfinalmongodb";
 //Collection navn
 var collectionNavn = "chatBeskeder"; //Skriv navnet på den collection der skal indsættes data i
 
@@ -291,8 +291,8 @@ app.use(function(req, res) {
 /*
 app.route('/').post('clienttoserver.login_as_client');
 */
-http.listen(8080, function(){
-  console.log('listening on *:8080');
+http.listen(8081, function(){
+  console.log('listening on *:8081');
 });
 
 //listener

@@ -11,14 +11,14 @@ exports.login_as_client = function(req, res){
     console.log("Forbindelse oprettet")
 
     var MongoClient = require('mongodb').MongoClient;
-var url = 'mongodb://stenboeg:stenboeg1234@ds155653.mlab.com:55653/sprogappmongodb';
+var url = 'mongodb://stenboeg:stenboeg1234@ds155653.mlab.com:55653/sprogappfinalmongodb';
 
 var brugernavn = user_name; 
 var password = password_in;
 
 MongoClient.connect(url,{ useNewUrlParser: true }, function(err, db) {
   if (err) throw err;
-  var dbo = db.db("sprogappmongodb");
+  var dbo = db.db("sprogappfinalmongodb");
   dbo.collection("brugere").find({brugernavn : brugernavn, kodeord : password},{projection : {_id : 0,}}).toArray(function(err, result) {
     if (err) throw err;
     if(result !== 'undefined' && result[0] !== 'undefined') {

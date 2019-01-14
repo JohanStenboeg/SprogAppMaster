@@ -2,11 +2,11 @@
 var mongoose = require('mongoose');
 var express = require('express');
 var router = express.Router();
-//var __dirname = 'localhost:8080/login';
+//var __dirname = 'localhost:8081/login';
 
 
 //Forbind til mongoDB vha. mongoose modulet.
-mongoose.connect('mongodb://stenboeg:stenboeg1234@ds155653.mlab.com:55653/sprogappmongodb', {useNewUrlParser: true});
+mongoose.connect('mongodb://stenboeg:stenboeg1234@ds155653.mlab.com:55653/sprogappfinalmongodb', {useNewUrlParser: true});
 //Fortæller hvilket Model den skal hente og bruge
 var BrugerModel = require('../models/brugerModel');
 //Fortæller hvilken collection i MongoDB der skal bruges
@@ -27,7 +27,7 @@ router.post('/register', function(req, res, next){
         if(err){return console.log(err)}
     });
     //send mig til opret-siden
-    res.redirect('https://sprogapp.appspot.com/login');
+    res.redirect('https://sprogappfinalfinal.appspot.com');
 });
 
 //udsend scriptet

@@ -3,7 +3,7 @@ var router = express.Router();
 var multer = require('multer');
 var MongoClient = require('mongodb').MongoClient;
 var ObjectId = require('mongodb').ObjectID;
-var url = "mongodb://stenboeg:stenboeg1234@ds155653.mlab.com:55653/sprogappmongodb";
+var url = "mongodb://stenboeg:stenboeg1234@ds155653.mlab.com:55653/sprogappfinalmongodb";
 
 var imagestorage = multer.diskStorage({
   destination: function (req, file, callback) {

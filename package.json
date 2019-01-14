@@ -1,5 +1,5 @@
 {
-  "name": "SprogAppFinalVersion",
+  "name": "sprogappfinalFinalVersion",
   "version": "11.6.0",
   "description": "finale mappen",
   "main": "server.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "sprogapp"
+    "sprogappfinal"
   ],
   "author": "T69Sovsen",
   "license": "ISC",
