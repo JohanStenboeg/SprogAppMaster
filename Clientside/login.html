@@ -355,7 +355,7 @@ p {
                                 document.cookie = "UserData=" + jsonString + ";path=/;";
                                 //document.cookie = "username=" + brugernavninput.value + ";password=" + passwordinput.value + ";path=/;"
                                 console.log(document.cookie);
-                                window.location.href = "http://localhost:8080/kursistside"
+                                window.location.href = "http://localhost:8081/kursistside"
 
                                 break;
 
@@ -364,7 +364,7 @@ p {
                                 document.cookie = "UserData=" + jsonString + ";path=/;";
                                 //document.cookie = "username=" + brugernavninput.value + ";password=" + passwordinput.value + ";path=/;"
                                 console.log(document.cookie);
-                                window.location.href = "http://localhost:8080/sprogmakkerside"
+                                window.location.href = "http://localhost:8081/sprogmakkerside"
 
                                 break;
 
@@ -373,12 +373,12 @@ p {
                                 document.cookie = "UserData=" + jsonString + ";path=/;";
                                 //document.cookie = "username=" + brugernavninput.value + ";password=" + passwordinput.value + ";path=/;"
                                 console.log(document.cookie);
-                                window.location.href = "http://localhost:8080/underviserside"
+                                window.location.href = "http://localhost:8081/underviserside"
 
                                 break;
 
                             case "":
-                                window.location.href = "http://localhost:8080"
+                                window.location.href = "http://localhost:8081"
                                 document.cookie = "loginPrivilege=" + this.response + ""
                         }
 
@@ -408,7 +408,7 @@ p {
             };
 
             //HTTP forespørgsel starter, og indhenter nødvendig data til genenmførsel.
-            var url = "http://localhost:8080";
+            var url = "http://localhost:8081";
             xmlhttp.open("POST", url, true);
             xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
             xmlhttp.send(params);
@@ -427,7 +427,7 @@ p {
                     <button onclick="testLogin()">Log Ind</button>
 
                     <!--Knap til nyBruger siden-->
-                    <button type="submit" onclick="location.href='http://localhost:8080/opretBruger'">Opret Ny bruger</button>
+                    <button type="submit" onclick="location.href='http://localhost:8081/opretBruger'">Opret Ny bruger</button>
                 </div>
             </div>
 

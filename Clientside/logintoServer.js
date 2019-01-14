@@ -49,20 +49,20 @@ function testLogin(){
 
 
                 /*if(this.response.value == "Kursist"){
-                    window.location.href= "http://127.0.0.1:8080/menu/kursist/kursistside.html"
+                    window.location.href= "http://127.0.0.1:8081/menu/kursist/kursistside.html"
                     document.cookie="loginPrivilege="+this.response+""
                 }
                 if(this.response.value == "Sprogmakker"){
-                    window.location.href = "http://127.0.0.1:8080/menu/sprogmakker/sprogmakkerside.html"
+                    window.location.href = "http://127.0.0.1:8081/menu/sprogmakker/sprogmakkerside.html"
                     document.cookie="loginPrivilege="+this.response+""
                 }
                 if(this.response.value == "Underviser"){
-                    window.location.href = "http://127.0.0.1:8080/menu/underviser/underviserside.html"
+                    window.location.href = "http://127.0.0.1:8081/menu/underviser/underviserside.html"
                     document.cookie="loginPrivilege="+this.response+""
                 }*/
 
 
-                //window.location.href= "http://127.0.0.1:8080/menu/underviser/underviserside.html"
+                //window.location.href= "http://127.0.0.1:8081/menu/underviser/underviserside.html"
                 //document.cookie="loginId="+this.response+""
                 //alert(document.cookie)
             }

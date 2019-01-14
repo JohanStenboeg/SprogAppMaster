@@ -1,6 +1,6 @@
 {
-  "name": "super",
-  "version": "1.0.0",
+  "name": "SprogAppFinalVersion",
+  "version": "11.6.0",
   "description": "finale mappen",
   "main": "server.js",
   "scripts": {

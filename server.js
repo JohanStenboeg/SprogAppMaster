@@ -17,7 +17,7 @@ var app = express();
 
 //login
 var clienttoserver = require('./routes/clienttoserver.js')
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8081;
 //var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
@@ -36,7 +36,7 @@ var opretRouter = require('./models/brugerModel');
 //var loginRouter = require('./Clientside/logintoServer');
 
 /**ROUTES TIL SCRIPTS */
-var opretRouter = require('../Super/routes/opretBruger.js');
+var opretRouter = require('./routes/opretBruger.js');
 //var loginRouter = require('./Clientside/logintoServer');
 
 /**ENDPOINTS */
@@ -291,8 +291,8 @@ app.use(function(req, res) {
 /*
 app.route('/').post('clienttoserver.login_as_client');
 */
-http.listen(8080, function(){
-  console.log('listening on *:8080');
+http.listen(8081, function(){
+  console.log('listening on *:8081');
 });
 
 //listener

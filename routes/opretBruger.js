@@ -2,7 +2,7 @@
 var mongoose = require('mongoose');
 var express = require('express');
 var router = express.Router();
-//var __dirname = 'localhost:8080/login';
+//var __dirname = 'localhost:8081/login';
 
 
 //Forbind til mongoDB vha. mongoose modulet.
